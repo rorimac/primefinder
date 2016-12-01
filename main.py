@@ -75,7 +75,7 @@ class PrimeGui(tk.Frame):
         prime_string = '\n'.join(str(prime) for prime in prime_list)
 
         # Update primes_label to new number_box value
-        self.primes_label.configure(text = 'Primes < '+self.number_box.get())
+        self.primes_label.configure(text = 'Primes < '+self.number_box.get()+', Total #: '+str(len(prime_string)))
 
         # Make text_box editable, remove previous text in it, add the primes to it and disable edit posibilities.
         self.text_box.config(state = tk.NORMAL)
